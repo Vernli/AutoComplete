@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Kahoot | Challenge</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="directory flex-col">
+        <h1>Directory</h1>
+        <div class="avaliable-words output-block">
+          <div id="words" class="words flex-row space-x space-y"></div>
+        </div>
+        <div class="add-word">
+          <form id="word-form" class="flex-row">
+            <input id="dir-input" type="text" placeholder="Insert word..." />
+            <input type="submit" value="Add" />
+          </form>
+        </div>
+      </div>
+      <div class="user-interface flex-col">
+        <h1>Autocomplete</h1>
+        <div class="sentences"></div>
+        <div class="user-input">
+          <div class="autocomplete-words"></div>
+          <form id="user-form" class="flex-row">
+            <input id="user-inp" type="text" />
+            <input type="submit" value="Enter" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

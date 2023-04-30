@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  background-color: #f7f5f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.container > * + * {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.directory {
+  width: 20vw;
+  height: 60vh;
+  background-color: #dfdfde;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.avaliable-words {
+  width: 90%;
+  height: 90%;
+  background-color: #f7f5f2;
+  border: 1px solid black;
+  color: black;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.add-word {
+  margin-top: 1rem;
+  width: 90%;
+}
+
+.add-word input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px 0px 0 10px;
+  outline: none;
+}
+
+.add-word input[type="submit"] {
+  width: 40%;
+  padding: 5px;
+  border: 1px solid black;
+  border-left: none;
+  background-color: #8d8daa;
+  cursor: pointer;
+}
+
+.add-word input[type="submit"]:hover {
+  background-color: #f56d91;
+}
+
+.words {
+  flex-wrap: wrap;
+}
+
+.word {
+  padding: 5px;
+  background-color: #f56d91;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.word p {
+  margin: 0 10px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.word:first-child {
+  margin-left: 0.25rem;
+}
+
+.space-x > * + * {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.space-y > * + * {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.output-block {
+  padding: 0.5rem;
+}
+
+.user-interface {
+  width: 40vw;
+  height: 60vh;
+  background-color: #dfdfde;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.sentences {
+  width: 90%;
+  height: 90%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f5f2;
+  border: 1px solid black;
+  color: black;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.sentence {
+  padding: 5px;
+  background-color: #f56d91;
+  border: 1px solid black;
+  word-wrap: break-word;
+}
+
+.user-input {
+  margin-top: 1rem;
+  width: 90%;
+}
+
+.user-input input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 0px 0px 0 10px;
+  outline: none;
+}
+
+.user-input input[type="submit"] {
+  width: 20%;
+  padding: 5px;
+  border: 1px 0 0 0 solid black;
+  border-left: none;
+  background-color: #8d8daa;
+  cursor: pointer;
+}
+
+.user-input input[type="submit"]:hover {
+  background-color: #f56d91;
+}
+
+.autocomplete-words {
+  width: 100%;
+  height: 1.3rem;
+  padding: 12px;
+  margin-bottom: 5px;
+  background-color: #f7f5f2;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  overflow-y: hidden;
+  font-size: 0.75rem;
+}
+
+.autocomplete-words > * + * {
+  margin-left: 10px;
+}
+
+.autocomplete:first-child {
+  margin-left: 0.25rem;
+}
+
+.suggestion {
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #dfdfde;
+  cursor: pointer;
+}
+.suggestion:hover {
+  filter: brightness(0.75);
+}
